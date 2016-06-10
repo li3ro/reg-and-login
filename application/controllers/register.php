@@ -20,7 +20,6 @@ class register extends CI_Controller {
 
         if($logged_in) {
             echo "<h1>Warning! You are already logged in and about to Register another user!</h1></br>";
-
         }
         $this->load->view('registerPage');
 
