@@ -63,7 +63,7 @@ p.footer {
     margin: 20px 0 0 0;
 }
 
-#container {
+#outter-container {
     margin: 10px;
     min-width: 430px;
     border: 1px solid #D0D0D0;
@@ -98,8 +98,22 @@ body {
     color: #404040;
     background: #0ca3d2;
 }
+.error_msg{
+    color:red;
+    font-size: 12px;
+}
+.message{
+    position: absolute;
+    font-weight: bold;
+    font-size: 28px;
+    color: #6495ED;
+    left: 262px;
+    width: 500px;
+    text-align: center;
+    margin-top: -46px;
+}
 
-.container {
+.inner-container {
     margin: 30px auto;
     width: 90%;
 }

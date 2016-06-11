@@ -10,15 +10,19 @@ class register extends CI_Controller {
 
     public function index()
     {
-        $logged_in = FALSE;
+        $logged_in = 'FALSE';
         foreach ($this->session->all_userdata() as $key => $value) {
             //echo "Key: $key; Value: $value";
             if($key === 'logged_in') {
-                $logged_in = $value;
+                if($value === TRUE) {
+                    $logged_in = 'TRUE';
+                } else {
+                    $logged_in = 'FALSE';
+                }
             }
         }
 
-        if($logged_in) {
+        if($logged_in === 'TRUE') {
             echo "<h1>Warning! You are already logged in and about to Register another user!</h1></br>";
         }
         $this->load->view('registerPage');
