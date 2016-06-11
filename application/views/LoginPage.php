@@ -36,7 +36,7 @@ $this->load->helper('url');
         <section class="inner-container">
             <div class="login">
                 <h1>Login to Web App</h1>
-                <?php echo form_open('main/login'); ?>
+                <?php echo form_open('welcome_in'); ?>
                     <?php
                         echo "<div class='error_msg'>";
                         if (isset($error_message)) {
