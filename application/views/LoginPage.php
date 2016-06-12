@@ -31,7 +31,7 @@ $this->load->helper('url');
             }
             echo "<p>You are not logged in. please log in [or <a href=";
             echo site_url('register');
-            echo ">Register</a>.]</p>";
+            echo ">Register</a>]</p>";
         ?>
         <section class="inner-container">
             <div class="login">
@@ -45,7 +45,7 @@ $this->load->helper('url');
                         echo validation_errors();
                         echo "</div>";
                     ?>
-                    <p><input type="text" name="username" value="" placeholder="Username or Email"></p>
+                    <p><input type="text" name="username" value="" placeholder="Username"></p>
                     <p><input type="password" name="password" value="" placeholder="Password"></p>
                     <p class="submit"><input type="submit" name="submit" value="Login"></p>
                 <?php echo form_close(); ?>

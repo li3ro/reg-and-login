@@ -3,7 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome_In extends CI_Controller
 {
-
     function __construct()
     {
         parent::__construct();
@@ -34,8 +33,10 @@ class Welcome_In extends CI_Controller
             foreach ($query->result() as $row) {
                 if ($row->username === $username && $row->password === $password) {
                     $usrdata = array(
-                        'username' => '111',
-                        'password' => '222',
+                        'username' => $row->username,
+                        'password' => $row->password,
+                        'email' => $row->email,
+                        'nick' => $row->nick,
                         'logged_in' => TRUE
                     );
                     $this->session->set_userdata($usrdata);

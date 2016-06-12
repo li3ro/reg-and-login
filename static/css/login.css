@@ -28,11 +28,11 @@ footer, header, menu, nav, section {
 ::-moz-selection { background-color: #E13300; color: white; }
 
 body {
-    background-color: #fff;
-    margin: 40px;
-    font: 13px/20px normal Helvetica, Arial, sans-serif;
-    color: #4F5155;
-}
+     background-color: #fff;
+     margin: 40px;
+     font: 13px/20px normal Helvetica, Arial, sans-serif;
+     color: #4F5155;
+ }
 
 a {
     color: #003399;
@@ -72,6 +72,9 @@ p.footer {
 
 body {
     line-height: 1;
+    font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    color: #404040;
+    background: #0ca3d2;
 }
 
 ol, ul {
@@ -93,11 +96,6 @@ table {
     border-spacing: 0;
 }
 
-body {
-    font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
-    color: #404040;
-    background: #0ca3d2;
-}
 .error_msg{
     color:red;
     font-size: 12px;
