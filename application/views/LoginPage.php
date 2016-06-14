@@ -12,8 +12,8 @@ $this->load->helper('url');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Login Page</title>
-
     <link rel="stylesheet" href="<?php echo base_url(); ?>static/css/login.css">
+
 </head>
 <body>
 
@@ -23,7 +23,6 @@ $this->load->helper('url');
     <div id="body">
 
         <?php
-
             if (isset($display_message) && $display_message.trim() != "0") {
                 echo "<div class='message'>";
                 echo $display_message;
